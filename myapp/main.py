@@ -264,9 +264,6 @@ tabs = Tabs(tabs=[
                   Adj_Close, Volume, Day_Perc_Change
                 ])
 
-# Show the tabbed layout
-show(tabs)
-
 """**Penjelasan level 2**
 
 Untuk level dua menambahkan aspek interaktif yang memungkinkan user untuk memilih parameter yang diinginkan. Parameternya adalah Adj Close, volume dan day_perc_volume dan jika ingin memilih salah satu dari paramater yang sudah disebutkan tadi tinggal mengklik saja dan akan menampilkan parameter yang diinginkan.
@@ -445,8 +442,6 @@ Day_Perc_Change = Panel(
 tabs = Tabs(tabs=[
                   Adj_Close, Volume, Day_Perc_Change
                 ])
-
-show(tabs)
 
 """**Penjelasan level 3**
 
