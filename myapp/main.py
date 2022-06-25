@@ -38,10 +38,6 @@ source_nasdaq2 = ColumnDataSource(data=nasdaq)
 source_nikkei2 = ColumnDataSource(data=nikkei)
 
 """## Level 1"""
-
-# Menampilkan ke plot HTML
-output_file('Level 1.html', title='Level 1')
-
 # Membuat Figure untuk menampilkan adj close
 fig1 = figure(
     x_axis_type='datetime',
@@ -91,9 +87,6 @@ fig1.add_tools(HoverTool(
     tooltips=tooltips,
     mode='vline'
 ))
-
-# Visualisasi
-show(fig1)
 
 """**Penjelasan Level 1**
 
@@ -251,9 +244,6 @@ fig3.add_tools(HoverTool(
     tooltips=tooltips,
     mode='vline'
 ))
-
-# Menampilkan ke plot HTML
-output_file('Level 2.html', title='Level 2')
 
 # Membuat tiga panel yaitu Adj Close,Volume,Day Perc Change
 Adj_Close = Panel(
@@ -433,9 +423,6 @@ fig3.add_tools(HoverTool(
     tooltips=tooltips,
     mode='vline'
 ))
-
-# Menampilkan ke plot HTML
-output_file('Level 3.html', title='Level 3')
 
 fig1.legend.click_policy = 'hide'
 fig2.legend.click_policy = 'hide'
