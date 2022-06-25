@@ -17,7 +17,7 @@ from bokeh.models import HoverTool
 from bokeh.models.widgets import Tabs, Panel
 
 # Membaca dataset dari stock market
-df = pd.read_csv('data/data.csv', parse_dates=['Date'])
+df = pd.read_csv('myapp/data/data.csv', parse_dates=['Date'])
 
 # Untuk menyimpan baris-baris tiap index di variabel hangseng, nasdaq dan nikkei
 hangseng = df[df.Name == 'HANG SENG']
